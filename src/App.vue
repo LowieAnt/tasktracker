@@ -1,16 +1,18 @@
 <template>
   <div class="container">
     <Header title="Task Tracker" />
+    <Tasks :tasks="tasks" />
   </div>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
 import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 export default {
   name: "App",
   components: {
     Header,
+    Tasks,
   },
   data() {
     return {
