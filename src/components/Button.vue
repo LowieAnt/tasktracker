@@ -11,12 +11,10 @@ export default {
   },
   methods: {
     onClick() {
-      console.log("click");
+      this.$emit("btn-click");
     },
   },
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
